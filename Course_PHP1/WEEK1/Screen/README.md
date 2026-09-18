@@ -4,7 +4,7 @@ Course: Web Application Development – PHP & MySQL
 
 This folder contains screenshots of the PHP exercises I practiced in class.
 
-  1. PHP Integer
+1. PHP Integer
 
 Screenshot Name: "PHP_Integer.png"
 
@@ -70,6 +70,7 @@ hello, hamda
 
 Screenshot Name: "PHP_String_Function.png"
 
+
 This screenshot shows how I used a String variable and the "str_word_count()" function.
 
 Code
@@ -88,5 +89,3 @@ Output
 
 Welcome PHP
 My name is - Hamda abdi adan
-
- 
