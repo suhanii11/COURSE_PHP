@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Example</title>
+</head>
+<body>
+    <h1>Use to string</h1>
+    <?php
+    print "hello world" . "<br>";
+
+    $name = "hamda";
+    $city = "mogadishu";
+
+    print $name . "<br>";
+    print $city;
+    ?>
+</body>
+</html>
