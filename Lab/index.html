@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade  Management System</title>
+</head>
+<body>
+    <h2>Student Grade Management System</h2>
+    <form action="Result.php" method="POST"
+          enctype="multipart/form-data">
+        <label>Student Full Name:</label><br>
+        <input type="text" name="student_name"><br><br>
+
+        <label>Student ID:</label><br>
+        <input type="text" name="student_id"><br><br>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+        <label>Faculty:</label><br>
+        <select name="faculty">
+            <option value="">Select Faculty</option>
+            <option value="IT">Information Technology</option>
+            <option value="Business">Business</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Health Science">Health Science</option>
+        </select>
+        <br><br>
+
+        <label>PHP Mark:</label><br>
+        <input type="number" name="php_mark" min="0" max="100">
+        <br><br>
+
+        <label>Database Mark:</label><br>
+        <input type="number" name="database_mark" min="0" max="100">
+        <br><br>
+
+
+        <label>Networking Mark:</label><br>
+        <input type="number" name="networking_mark" min="0" max="100">
+        <br><br>
+
+        <label>Student Certificate:</label><br>
+        <input type="file" name="certificate">
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+</html>
