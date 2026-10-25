@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Banking Account Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        form {
+            background-color: white;
+            width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button, input[type="reset"] {
+            padding: 10px 15px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: darkblue;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<form action="process.php" method="post"
+      enctype="multipart/form-data">
+
+    <h2>Banking Account Form</h2>
+
+    <label>Customer Full Name</label>
+    <input type="text" name="name">
+
+    <label>Account Number</label>
+    <input type="text" name="account">
+
+    <label>Gender</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+
+    <label>Account Type</label>
+    <select name="type">
+        <option value="">Select Account Type</option>
+        <option value="Savings">Savings</option>
+        <option value="Current">Current</option>
+        <option value="Business">Business</option>
+    </select>
+
+    <label>Opening Balance</label>
+    <input type="number" name="balance" min="0" step="0.01">
+
+    <label>Transaction Type</label>
+    <input type="radio" name="transaction" value="Deposit"> Deposit
+    <input type="radio" name="transaction" value="Withdrawal"> Withdrawal
+
+    <label>Transaction Amount</label>
+    <input type="number" name="amount" min="0.01" step="0.01">
+
+    <label>Account Duration (Years)</label>
+    <input type="number" name="years" min="0" step="1">
+
+    <label>Identification Document</label>
+    <input type="file" name="document">
+
+    <button type="submit">Process Transaction</button>
+
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
